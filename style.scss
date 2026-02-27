@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+}
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "frame1 frame1 frame2 frame2 frame2"
+        "frame1 frame1 frame2 frame2 frame2"
+        "frame1 frame1 frame2 frame2 frame2"
+        "frame1 frame1 frame3 frame4 frame5"
+        "frame1 frame1 frame3 frame4 frame5";
+    gap: 10px;
+    padding: 10px;    
+}
+div{
+  border-radius:20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.frame1{
+    grid-area: frame1;
+    background-color: lightcoral;
+
+    
+}
+.frame2{    
+    grid-area: frame2;
+    background-color: lightblue;
+}
+.frame3{
+    grid-area: frame3;
+    background-color: lightgreen;
+}
+.frame4{
+    grid-area: frame4;
+    background-color: rgb(249, 249, 126);
+}
+.frame5{
+    grid-area: frame5;
+    background-color: rgb(247, 145, 247);
+}
+.frame1 img{
+    width: 100%;
+    height: 100%;
+       object-fit: cover;
+    overflow: hidden;
+    border-radius:20px;
+}
+.frame2 img{
+    width: 100%;
+    height: 100%;
+
+       object-fit: cover;
+    overflow: hidden;
+    border-radius:20px;
+}
+.frame3 img{
+    width: 100%;
+    height: 100%;
+       object-fit: cover;
+    overflow: hidden;
+    border-radius:20px;
+}
+.frame4 img{
+    width: 100%;
+    height: 100%;
+       object-fit: cover;
+    overflow: hidden;
+    border-radius:20px;
+}
+.frame5 img{
+    width: 100%;
+    height: 100%;
+       object-fit: cover;
+    overflow: hidden;
+    border-radius:20px;
+}
